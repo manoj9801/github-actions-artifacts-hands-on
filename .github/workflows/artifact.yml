@@ -21,9 +21,9 @@ jobs:
   download:
     runs-on: ubuntu-latest
     steps:
-      -name: download a 
-       uses: actions/download-artifact@v4
-       with:
-         path: ./artifacts
-      -name: run a command
-       run: cat ./artifacts/hello.txt
+    - name: download a 
+      uses: actions/download-artifact@v4
+      with:
+        path: ./artifacts
+    - name: run a command
+      run: cat ./artifacts/hello.txt
